@@ -9,6 +9,8 @@
  }
  
  /* variable */
+
+
  :root{
  --primary : #EB651C;
  --secondary : #E5DBD0;
@@ -17,21 +19,42 @@
  --button : #EB651C;
  font-size: 1.5em;
  }
- 
+/* <----------------------------------------------------------------------> */    
+                             /* small-screen */
+
 
   /* basic style */
   @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
  
   body {
+   
      font-family: 'Amiri', serif;
+
+     /* placement des éléments sur la page */
+
      display: grid;
-     grid-template-columns: repeat(3,1fr);
+     grid-template-columns: 1fr 4fr 1fr;
      grid-template-rows:repeat(6,1fr) ;
-     grid-template-areas: "header header header";
+     grid-template-areas: 
+     "header header header"
+     "main main main"
+     "main main main"
+     "main main main"
+     
+     ;
+
+     /* fond d'écrant */
+     background-image: url(photo/théme-small-screen.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-position-y: -20%;
+     /* height: auto;  */
     
   }
- 
-  /* header */
+/* <----------------------------------------------------------------------> */
+  
+/* header */
   
   header {
     
@@ -64,12 +87,44 @@
  
           a:hover{
              color:var(--primary);
-             text-decoration:overline;
+             text-decoration:underline;
              
           }
+/* <----------------------------------------------------------------------> */
 
-        
-         /* screen 768px */
+/* main */
+
+
+          main{
+              grid-area: main;
+          }
+
+          section {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: nowrap;
+          }
+
+          article{
+              padding-bottom: 10px;
+          }
+
+          h2 {
+              text-align: center;
+              font-size: 1em;
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+
+          p {
+              text-align: center;
+          }
+/* <----------------------------------------------------------------------> */        
+
+                        /* screen 768px */
+
+
           @media screen and (min-width : 768px ) { 
 
          .navBar__link{
@@ -78,3 +133,4 @@
          }
 
         }
+/* <----------------------------------------------------------------------> */
