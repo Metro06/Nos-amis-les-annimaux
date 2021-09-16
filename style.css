@@ -15,6 +15,64 @@
   --tretinary : #41392E;
  --main :#171614;
  --button : #EB651C;
- font-size: 1.2em;
+ font-size: 1.5em;
  }
  
+
+  /* basic style */
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+ 
+  body {
+     font-family: 'Amiri', serif;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows:repeat(6,1fr) ;
+     grid-template-areas: "header header header";
+    
+  }
+ 
+  /* header */
+  
+  header {
+    
+     background-color: var(--secondary) ;
+     grid-area: header;
+    }
+  
+    
+     .navBar {
+              
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+      
+       
+ 
+          }
+ 
+        ul li {
+            padding-bottom: 10%;
+            list-style-type: none; 
+        }
+ 
+          .navBar__link a {
+             font-weight:bolder ;
+             color: var(--main);
+             text-decoration: none;
+             
+          }
+ 
+          a:hover{
+             color:var(--primary);
+          }
+ 
+        
+         /* screen 768px */
+          @media screen and (min-width : 768px ) { 
+
+         .navBar__link{
+            display: inline-flex;
+            padding: 10px;
+         }
+
+        }
