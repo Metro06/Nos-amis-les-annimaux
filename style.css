@@ -98,14 +98,16 @@
           main{
               grid-area: main;
           }
+          /* placement sur la grille */
 
           section {
               display: flex;
+              flex-direction: column;
               justify-content: center;
               align-items: center;
-              flex-wrap: nowrap;
+              flex-wrap: wrap;
           }
-
+          alignement des article
           article{
               padding-bottom: 10px;
           }
@@ -115,6 +117,11 @@
               font-size: 1em;
               padding-top: 10px;
               padding-bottom: 10px;
+          }
+
+          h3 {
+              text-align: center;
+              font-size: 0.8em;
           }
 
           p {
