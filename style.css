@@ -15,7 +15,7 @@
   --tretinary : #41392E;
  --main :#171614;
  --button : #EB651C;
- font-size: 1.5em;
+ font-size: 1.2em;
  }
  
 
@@ -51,7 +51,8 @@
           }
  
         ul li {
-            padding-bottom: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
             list-style-type: none; 
         }
  
@@ -63,7 +64,8 @@
           }
  
           a:hover{
-             color:var(--primary);
+             color: var(--primary);
+             text-decoration: underline;
           }
  
         
