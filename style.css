@@ -33,7 +33,7 @@
      /* placement des éléments sur la page */
 
      display: grid;
-     grid-template-columns: 1fr 4fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows:repeat(6,1fr) ;
      grid-template-areas: 
      "header header header"
@@ -65,7 +65,10 @@
      /* placement sur la grille */
      grid-area: header;
     }
-  
+    
+    .navBar__logo:focus {
+       transition: all rotate;
+    }
     
      .navBar {
               
@@ -103,11 +106,6 @@
              grid-area: main;
           }
 
-            article {
-
-              padding-bottom: 10px;
-          }
-
           h2 {
               text-align: center;
               font-size: 1em;
@@ -127,7 +125,7 @@
     /* présentations */
           .présentation {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -141,10 +139,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding-top: 10%;
-      /* padding: 10px; */
       
    }
+
 /* <----------------------------------------------------------------------> */        
                         /* screen 768px */
 
