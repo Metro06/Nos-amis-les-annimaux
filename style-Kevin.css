@@ -40,9 +40,6 @@
      "main main main"
      "main main main"
      "main main main"
-
-
-
      
      ;
 
@@ -98,10 +95,6 @@
 
 /* main-style*/
 
-          main{
-             grid-area: main;
-          }
-
             article {
 
               padding-bottom: 10px;
@@ -124,13 +117,8 @@
           }
 
     /* présentations */
-          .présentation {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-          }
+
+
 /* <----------------------------------------------------------------------> */        
                         /* screen 768px */
 
