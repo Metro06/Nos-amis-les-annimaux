@@ -81,15 +81,14 @@
  
           }
  
-        ul li {
-            padding-bottom: 10%;
-            list-style-type: none; 
-        }
  
-          .navBar__link a {
+          .navBar__links , .navBar__link a {
+            list-style-type: none;
              font-weight:bolder ;
              color: var(--main);
              text-decoration: none;
+             line-height: -10%;
+
              
           }
  
@@ -107,13 +106,14 @@
           }
 
           h2 {
+             text-decoration: underline;
               text-align: center;
               font-size: 1em;
               padding: 10%;
           }
 
           h3 {
-             padding: 20%;
+             padding-top: 10%;
               text-align: center;
               font-size: 0.8em;
           }
@@ -141,6 +141,14 @@
       align-items: center;
       
    }
+
+      .missions , .mission__link a {
+
+      list-style-type: none;
+       font-weight:bolder ;
+       color: var(--main);
+       text-decoration: none;
+   } 
 
 /* <----------------------------------------------------------------------> */        
                         /* screen 768px */
