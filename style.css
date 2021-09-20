@@ -133,6 +133,12 @@
             justify-content: center;
             align-items: center;
           }
+
+          .intro__paragraph__first{
+             padding-bottom: 10%;
+          }
+
+
 /* <----------------------------------------------------------------------> */
    
 /* Nos missions */
@@ -141,11 +147,15 @@
 
     /* container flex */
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       padding-bottom: 10%;
       
+   }
+
+   .mission__link {
+      display: flex;
+      flex-direction: row;
    }
 
    .missions , .mission__link a {
@@ -161,10 +171,19 @@
    /* container flex */
       .helps {
          display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         align-items: center;
+         justify-content: space-around;
+         align-items: flex-end;
          list-style-type: none;
+      }
+      
+      .help {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .help ~ p , h3 {
+         padding: 5%;
       }
 
 
