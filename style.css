@@ -18,7 +18,7 @@
    --tretinary : #41392E;
    --main :#171614;
    --button : #EB651C;
-   font-size: 1.5em;
+
 
  }
 /* <----------------------------------------------------------------------> */    
@@ -47,10 +47,28 @@ body {
 
 
    ;
+}
 
-  
+
+
+h2 {
    
-   
+   text-decoration: underline;
+}
+
+h2, h1, h3 {
+   padding: 10%;
+   font-weight: bolder;
+}
+h3, p, h1, h2 {
+
+   text-align: center;
+
+}
+
+p {
+   font-weight: 400;
+   font-size: 1.3em;
 }
 /* <----------------------------------------------------------------------> */
 
@@ -63,9 +81,17 @@ header {
    grid-area: header;
 
 }
+
+/* logo */
+
+   .navBar__logo > img {
+
+      height: 15vh;
+
+   }
    
 
-   /* container flex */
+   /* container flex navigation */
 .navBar {
             
    display: flex;
@@ -78,6 +104,7 @@ header {
 
 }
 
+   /* style des liens */
 
 .navBar__links , .navBar__link a {
 
@@ -89,7 +116,8 @@ header {
    
 }
   
-
+   /* style des liens */
+    
 a:hover {
    color:var(--primary);
       text-decoration:underline;
@@ -101,7 +129,9 @@ a:hover {
 
 main {
 
+   /* placement du main sur grid */
    grid-area: main;
+
              /* fond d'écrant */
    background-image: url(photo/théme-small-screen.png);
    background-repeat: no-repeat;
@@ -109,28 +139,11 @@ main {
    background-size: cover;
 }
 
-h2 {
-
-   text-decoration: underline;
-   text-align: center;
-   font-size: 1em;
-   padding: 10%;
-}
-
-h3 {
-
-   text-align: center;
-   font-size: 0.8em;
-}
-
-p {
-   text-align: center;
-}
 /* <----------------------------------------------------------------------> */
 
    /* présentations */
 
-         /* container flex */
+         /* container flex présention */
 .présentation {
    display: flex;
    flex-direction: column;
@@ -181,11 +194,7 @@ p {
 
    display: flex;
    justify-content: space-around;
-   align-items: flex-end;
    list-style-type: none;
-   align-items: flex-start;
-   justify-content: space-around;
-   align-content: space-around;
 
    }
    
@@ -193,15 +202,18 @@ p {
 
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
 
 }
 
-.help ~ p , h3 {
+.img__help {
+   height: 70px;
+   
 
-   padding: 5%;
-      
 }
+
+
 
 
 
