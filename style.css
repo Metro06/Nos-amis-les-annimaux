@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    
 
  }
  
@@ -43,10 +44,19 @@ body {
    "main main main"
    "main main main"
    "main main main"
+   "aside aside aside"
+   "aside aside aside"
 
 
 
    ;
+}
+
+a {
+   list-style-type: none;
+   font-weight:bolder ;
+   color: var(--main);
+   text-decoration: none;
 }
 
 
@@ -70,6 +80,13 @@ p {
    font-weight: 400;
    font-size: 1.3em;
 }
+
+.FAC {
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+}
+
 /* <----------------------------------------------------------------------> */
 
 /* header */
@@ -86,7 +103,7 @@ header {
 
    .navBar__logo > img {
 
-      height: 15vh;
+      height: 80px;
 
    }
    
@@ -95,9 +112,9 @@ header {
 .navBar {
             
    display: flex;
-   flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   padding: 10px;
       
    
       
@@ -106,12 +123,9 @@ header {
 
    /* style des liens */
 
-.navBar__links , .navBar__link a {
+.navBar__links {
 
-   list-style-type: none;
-      font-weight:bolder ;
-      color: var(--main);
-      text-decoration: none;
+      list-style-type: none;
       line-height: -10%;
    
 }
@@ -164,39 +178,19 @@ main {
 
 .missions {
 
-   /* container flex */
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
    padding-bottom: 10%;
    
 }
 
 .mission__link {
 
-   display: flex;
-   flex-direction: row;
+   list-style: none;
 
 }
 
-.missions , .mission__link a {
 
-   list-style-type: none;
-      font-weight:bolder ;
-      color: var(--main);
-      text-decoration: none;
-} 
 /* <----------------------------------------------------------------------> */
 /* help-compagnion */
-
-/* container flex */
-.helps {
-
-   display: flex;
-   justify-content: space-around;
-   list-style-type: none;
-
-   }
    
 .help {
 
@@ -214,10 +208,38 @@ main {
 }
 
 
+/* <----------------------------------------------------------------------> */
 
 
+/* aside */
+
+/* placement sur grid container */
+
+aside {
+   grid-area: aside;
+   background-color: var(--tretinary);
+}
 
 
+/* pub */
+
+.advertising {
+
+   background-color: var(--tretinary);
+   height: 150px;
+
+
+}
+
+.pub {
+   position: relative;
+   bottom: -30px;
+}
+
+/* partner */
+.img__partner{
+   height: 80px;
+}
 /* <----------------------------------------------------------------------> */        
                      /* screen 768px */
 
