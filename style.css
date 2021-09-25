@@ -38,7 +38,7 @@ body {
    display: grid;
    align-items: flex-start;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-auto-rows: min-content;
+   grid-auto-rows: auto;
    grid-template-areas: 
    "header header header"
    "main main main"
@@ -46,6 +46,8 @@ body {
    "main main main"
    "aside aside aside"
    "aside aside aside"
+   "footer footer footer"
+   
 
 
 
@@ -70,7 +72,8 @@ h2, h1, h3 {
    padding: 10%;
    font-weight: bolder;
 }
-h3, p, h1, h2 {
+
+h3, p, h1, h2, h4 {
 
    text-align: center;
 
@@ -79,6 +82,10 @@ h3, p, h1, h2 {
 p {
    font-weight: 400;
    font-size: 1.3em;
+}
+
+aside, footer {
+   background-color: var(--tretinary);
 }
 
 .FAC {
@@ -161,7 +168,6 @@ main {
 .présentation {
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
 
@@ -215,31 +221,61 @@ main {
 
 /* placement sur grid container */
 
+
+
 aside {
    grid-area: aside;
-   background-color: var(--tretinary);
+ 
 }
-
 
 /* pub */
 
 .advertising {
 
-   background-color: var(--tretinary);
    height: 150px;
 
 
 }
 
-.pub {
+/* .pub {
    position: relative;
    bottom: -30px;
-}
+} */
 
 /* partner */
-.img__partner{
-   height: 80px;
+
+
+
+.partner {
+   display: flex;
+   justify-content: space-around;
+   ;
 }
+
+/* footer */
+
+footer {
+   grid-area: footer;
+}
+
+.imgSocialNetwork{
+   display: flex;
+   justify-content: space-around;
+   text-align: justify;
+}
+.legalNotice {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   align-items: flex-end;
+
+}
+
+.legalNoticeText {
+align-self: flex-end;
+}
+
 /* <----------------------------------------------------------------------> */        
                      /* screen 768px */
 
