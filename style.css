@@ -95,6 +95,7 @@ header {
    background-color: var(--secondary) ;
    /* placement sur la grille */
    grid-area: header;
+   min-height: 100px;
 
 }
 
@@ -113,7 +114,6 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 10px;
       
    
       
@@ -123,12 +123,16 @@ header {
    /* style des liens */
 
 .navBar__links {
-
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       list-style-type: none;
-      line-height: -10%;
+      height: 5rem;
+      
    
 }
-  
+
    /* style des liens */
     
 a:hover {
@@ -146,7 +150,7 @@ main {
    grid-area: main;
 
              /* fond d'écrant */
-   background-image: url(photo/théme-small-screen.png);
+   background-image: url(photo/Thème/théme-small-screen.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -238,7 +242,7 @@ aside {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   min-height: 150px;
+   min-height: 200px;
 
 
 }
@@ -287,6 +291,11 @@ footer {
    display: flex;
    justify-content: space-between;
 
+}
+
+.logo__footer img {
+   height: 100px;
+   width: 110px;
 }
 
 .imgSocialNetwork{
