@@ -367,18 +367,18 @@ footer {
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 3vh;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 2vh;
    }
 
    a, h5 {
-      font-size: 1.5rem;
+      font-size: 2vh;
    }
 
    /* image / logo */
@@ -446,26 +446,6 @@ footer {
 
 
 @media screen and (min-width : 1660px ) { 
-
-
-   /* basique style */
-
-   h3, p, h1, h2, h4{
-
-      text-align: center;
-      font-size: 2vw;
-   
-   }
-   
-   p {
-      color: var(--main);
-      font-weight: 400;
-      font-size: 2vw;
-   }
-
-   a {
-      font-size: 2vh;
-   }
 
    /* image / logo */
 
@@ -539,9 +519,24 @@ footer {
 
 /* présentation */
 
-   .intro__paragraph__first{
+.présentation {
+   flex-direction: row;
+   /* max-width: 50vw; */
+
+}
+
+.présentation__text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 60vw;
+}
+
+.intro__paragraph__first{
       padding-bottom: 5%;
-   }
+   
+   
+}
 
 /* aside */
 
@@ -601,4 +596,28 @@ footer {
    }
 
 
+}
+
+
+/* small__screen__actualitys */
+
+.actualitys {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+}
+
+.actuality__article {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+}
+
+.date {
+   position: relative;
+   right: -30vw;
+   padding-top: 5vh;
 }
