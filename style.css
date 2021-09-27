@@ -206,15 +206,21 @@ main {
 .helps {
    display: flex;
    justify-content: space-around;
+   align-content: center;
 }
    
 .help {
 
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
 
+}
+
+.help__healt {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .img__help {
@@ -222,6 +228,7 @@ main {
    
 
 }
+
 
 
 /* <----------------------------------------------------------------------> */
@@ -328,19 +335,18 @@ footer {
 .socialNetwork {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content:  space-around;
 }
 
 .imgSocialNetwork{
    display: flex;
    justify-content: space-around;
-   padding: 5%;
+   align-items:  center;
 }
 
 .socialNetwork h5 {
     text-transform: uppercase;
-    text-align: center ;
-    max-width: 200px;
+    
 }
 
 .navFooter {
@@ -365,18 +371,18 @@ footer {
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 1.5em;
+      font-size: 1.5rem;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 1.5em;
+      font-size: 1.5rem;
    }
 
    a, h5 {
-      font-size: 1.2em;
+      font-size: 1.5rem;
    }
 
    /* image / logo */
@@ -395,6 +401,10 @@ footer {
    .navBar__logo img {
       width: 20vw;
       height: 10vh;
+   }
+
+   .img__gouv {
+      width: 35vw;
    }
 
    .logo__footer img {
@@ -428,7 +438,7 @@ footer {
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 2em;
+      font-size: 5rem;
    
    }
    
