@@ -305,10 +305,6 @@ footer {
 
 }
 
-.logo__footer {
-   padding-left: 5px;
-}
-
 .logo__footer img {
    height: 100px;
    width: 80px;
@@ -424,6 +420,24 @@ footer {
    
 }
 
+/* pub */
+
+
+.advertising {
+  
+   min-height: 20vh;
+
+
+}
+/* partner */
+
+.nosPartner {
+ 
+   min-height: 30vh;
+
+
+}
+
 
 }
 /* <----------------------------------------------------------------------> */
@@ -431,49 +445,96 @@ footer {
                               /* screen 1024px */
 
 
-@media screen and (min-width : 1024px ) { 
+@media screen and (min-width : 1660px ) { 
+
 
    /* basique style */
 
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 5rem;
+      font-size: 2vw;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 2em;
+      font-size: 2vw;
    }
 
-   a, h5 {
-      font-size: 1.2em;
+   a {
+      font-size: 2vh;
    }
 
    /* image / logo */
 
-   img {
+   .missions img {
+      width: 8vw;
+      height: 10vh;
+   }
+
+   .img__help {
+      width: 8vw;
+      height: 10vh;
+   }
+
+   .advertising img {
+      width: 8vw;
+      height: 10vh;
+   }
+
+   .partner img {
+      width: 8vw;
+      height: 10vh;
+   }
+
+   .partner > .img__gouv {
       width: 15vw;
       height: 10vh;
    }
 
-
    .imgSocialNetwork img {
-      width: 10vw;
+      width: 5vw;
       height: 5vh;
    }
 
-   .navBar__logo img {
-      width: 20vw;
-      height: 10vh;
-   }
+/* header */
 
-   .logo__footer img {
-      width: 20vw;
-      height: 10vh;
-   }
+
+.navBar__logo {
+   position: relative;
+   left: -2vw;
+}
+
+
+   /* style des liens */
+
+.navBar__links {
+   justify-content: space-around;
+   min-width: 20vw;
+   
+}
+
+/* pub */
+
+
+.advertising {
+  
+   min-height: 20vh;
+
+
+}
+/* partner */
+
+.nosPartner {
+ 
+   min-height: 30vh;
+
+
+}
+/* <----------------------------------------------------------------------> */
+
 
 
 /* présentation */
@@ -481,6 +542,63 @@ footer {
    .intro__paragraph__first{
       padding-bottom: 5%;
    }
+
+/* aside */
+
+
+/* pub */
+
+
+.advertising {
+  
+   min-height: 20vh;
+
+
+}
+/* partner */
+
+.nosPartner {
+ 
+   min-height: 40vh;
+
+
+}
+
+/* footer */
+
+
+
+   footer {
+     
+      min-height: 20vh;
+     
+   }
+
+   .logo__footer {
+      position: relative;
+      left: -3vw;
+   }
    
+   
+   .navBar__link__footer a {
+      font-size: 1vw;
+   
+   }
+   
+   .socialNetwork {
+      position: relative;
+      left: -5vw;
+   }
+   
+   .imgSocialNetwork{
+
+      width: 50vw;
+   }
+   
+   .socialNetwork h5 {
+       font-size:1vw;
+       
+   }
+
 
 }
