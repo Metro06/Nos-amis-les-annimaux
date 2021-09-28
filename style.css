@@ -109,7 +109,7 @@ header {
 
    .navBar__logo > img {
 
-      height: 80px;
+      min-height: 15vh;
 
    }
    
