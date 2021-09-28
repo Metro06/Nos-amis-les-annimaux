@@ -8,6 +8,8 @@
     
 
  }
+
+/* <----------------------------------------------------------------------> */
  
  /* variable */
 
@@ -99,6 +101,9 @@ header {
    min-height: 150px;
 
 }
+
+/* <----------------------------------------------------------------------> */
+
 
 /* logo */
 
@@ -245,6 +250,7 @@ aside {
    background-color: var(--background);
 }
 
+/* <----------------------------------------------------------------------> */
 
 
 /* pub */
@@ -263,6 +269,7 @@ aside {
    justify-content: space-around;
    align-content: center;
 }
+/* <----------------------------------------------------------------------> */
 
 /* partner */
 
@@ -381,14 +388,12 @@ footer {
       font-size: 2vh;
    }
 
+/* <----------------------------------------------------------------------> */
+
+
    /* image / logo */
 
-   img {
-      width: 15vw;
-      height: 10vh;
-   }
-
-
+  
    .imgSocialNetwork img {
       width: 7vw;
       height: 5vh;
@@ -420,6 +425,8 @@ footer {
    
 }
 
+/* <----------------------------------------------------------------------> */
+
 /* pub */
 
 
@@ -429,6 +436,9 @@ footer {
 
 
 }
+
+/* <----------------------------------------------------------------------> */
+
 /* partner */
 
 .nosPartner {
@@ -479,6 +489,8 @@ footer {
       height: 5vh;
    }
 
+/* <----------------------------------------------------------------------> */
+
 /* header */
 
 
@@ -496,6 +508,9 @@ footer {
    
 }
 
+/* <----------------------------------------------------------------------> */
+
+
 /* pub */
 
 
@@ -505,6 +520,9 @@ footer {
 
 
 }
+
+/* <----------------------------------------------------------------------> */
+
 /* partner */
 
 .nosPartner {
@@ -614,10 +632,51 @@ footer {
    justify-content: space-between;
    align-content: center;
    align-items: center;
+   min-height: 100vh;
 }
 
 .date {
    position: relative;
    right: -30vw;
-   padding-top: 5vh;
+   padding-top: 0.5vh;
+   padding-bottom: 10vh;
 }
+
+.actuality__img {
+   max-width: 310px;
+}
+
+
+@media screen and (min-width : 768px) {
+   .actuality__article {
+   
+      min-height: 60vh;
+      max-width: 666px;
+   }
+
+   }
+
+@media screen and (min-width : 1334px) {
+   .actuality__article {
+   
+      min-height: 90vh;
+      
+   }
+
+   .actualitys {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+   
+   }
+   
+
+   .date {
+      position: relative;
+      right: -20vw;
+      padding-top: 0.5vh;
+      padding-bottom: 30vh;
+   }
+
+   }
