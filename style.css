@@ -41,8 +41,8 @@ body {
 
    display: grid;
    align-items: flex-start;
-   grid-auto-columns: 1fr 1fr 1fr;
-   grid-auto-rows: min-content max-content auto;
+   grid-auto-columns: auto max-content(900px) auto;
+   grid-auto-rows: min-content;
    grid-template-areas: 
    "header header header"
    "main main main"
