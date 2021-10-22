@@ -1,11 +1,5 @@
 /* reset */
-
-*,
-*:before,
-*:after,
-html,
-body
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,8 +137,9 @@ header {
       flex-direction: column;
       justify-content:  space-evenly;
       align-items: center;
-      height: 7rem;
-      padding: 10px;
+      height: 100px;
+      width: 100px;
+      background-color: var(--background);
       
    
 }
@@ -154,13 +149,51 @@ header {
 a:hover {
    color:var(--primary);
       text-decoration:underline;
+    
       
 }
+
+/* toogle menu */
+
+.navBar__links{
+   display: none;
+}
+
+.burger {
+   position: relative;
+   padding: 10px;
+}
+
+.bar{
+   position: relative;
+   background-color:var(--tretinary);
+   width: 50px;
+   height: 4px;
+}
+.bar::before, .bar::after {
+   position: absolute;
+   content:"";
+   left: 0;
+   background-color: var(--tretinary);
+   width: 50px;
+   height: 4px;
+}
+
+.bar::after {
+   top: 10px;
+}
+
+.bar::before{
+   
+   top: -10px;
+}
+
+
 /* <----------------------------------------------------------------------> */
 
 /* main-style*/
 
-main {
+ main {
 
    /* placement du main sur grid */
    grid-area: main;
