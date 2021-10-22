@@ -13,6 +13,9 @@ body
     
 
  }
+ ul{
+    list-style: none;
+ }
 
 /* <----------------------------------------------------------------------> */
  
@@ -64,7 +67,7 @@ body {
 }
 
 a {
-   list-style-type: none;
+  
    font-weight:bolder ;
    color: var(--navigation);
    text-decoration: none;
@@ -113,8 +116,8 @@ header {
 /* logo */
 
    .navBar__logo > img {
-
-      min-height: 15vh;
+      width: 200%;
+      min-height: auto;
 
    }
    
@@ -140,7 +143,6 @@ header {
       flex-direction: column;
       justify-content:  space-evenly;
       align-items: center;
-      list-style-type: none;
       height: 7rem;
       padding: 10px;
       
@@ -196,17 +198,11 @@ main {
 
    padding-bottom: 10%;
    display: flex;
-   justify-content: space-around;
+   justify-content:space-evenly;
    align-content: center;
    align-items: center;
 
    
-}
-
-.mission__link {
-
-   list-style: none;
-
 }
 
 
@@ -215,7 +211,7 @@ main {
 
 .helps {
    display: flex;
-   justify-content: space-around;
+   justify-content:  space-evenly;
    align-content: center;
 }
    
@@ -233,8 +229,12 @@ main {
    align-items: center;
 }
 
+.helps > li{
+   max-width: 280px;
+}
+
 .img__help {
-   height: 70px;
+   height: auto;
    
 
 }
@@ -258,21 +258,11 @@ aside {
 /* <----------------------------------------------------------------------> */
 
 
-/* pub */
-
-.advertising {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   min-height: 150px;
-
-
-}
-
 .pub {
    display: flex;
-   justify-content: space-around;
+   justify-content:  space-evenly;
    align-content: center;
+   padding: 5%;
 }
 /* <----------------------------------------------------------------------> */
 
@@ -281,7 +271,7 @@ aside {
 .nosPartner {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content:  center;
    min-height: 250px;
 
 
@@ -293,11 +283,14 @@ aside {
 
 .partner {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-content: center;
    align-items: flex-end;
+   padding: 5%;
    
 }
+
+
 
 /* footer */
 
@@ -331,7 +324,6 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   list-style-type: none;
 
 }
 
@@ -379,18 +371,19 @@ footer {
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 3vh;
+      font-size: 1.5rem;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 2vh;
+      font-size: 1.5rem;
    }
 
    a, h5 {
-      font-size: 2vh;
+      font-size: 1.2rem;
+      padding-bottom: 5%;
    }
 
 /* <----------------------------------------------------------------------> */
@@ -398,24 +391,37 @@ footer {
 
    /* image / logo */
 
-  
+   .navBar {
+            
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10px;
+      
+         
+      
+         
+   
+   }
+
    .imgSocialNetwork img {
-      width: 7vw;
-      height: 5vh;
+      width: 10%;
+      height: auto;
    }
 
    .navBar__logo img {
-      width: 20vw;
-      height: 10vh;
+      width: 200%;
+      height: auto;
    }
 
    .img__gouv {
-      width: 35vw;
+      width: 25%;
+      height: auto;
    }
 
    .logo__footer img {
-      width: 20vw;
-      height: 10vh;
+      width: 100%;
+      height: auto;
    }
 
    /* header */
@@ -424,20 +430,26 @@ footer {
       flex-direction: row;
       justify-content:  space-around;
       align-items: center;
-      list-style-type: none;
       min-width: 500px;
       
    
 }
 
-/* <----------------------------------------------------------------------> */
 
+
+/* <----------------------------------------------------------------------> */
+.présentation__text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 60%;
+}
 /* pub */
 
 
 .advertising {
   
-   min-height: 20vh;
+   min-height: 200px;
 
 
 }
@@ -448,16 +460,54 @@ footer {
 
 .nosPartner {
  
-   min-height: 30vh;
+   min-height: 300px;
 
 
 }
 
 
 }
+
+.actuality__article {
+   
+   min-height: 60%;
+   max-width: 667px;
+}
+
+.container__footer{
+   justify-content: space-evenly;
+}
+
 /* <----------------------------------------------------------------------> */
-
                               /* screen 1024px */
+@media screen and (min-width : 1334px) {
+   .actuality__article {
+   
+      min-height: 90%;
+      
+   }
+
+   .actualitys {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10%;
+   }
+   
+
+   .date {
+      position: relative;
+      right: -20%;
+      padding-top: 0.5%;
+   }
+
+   }
+
+
+   
+/* <----------------------------------------------------------------------> */
+                              /* screen 1024px*/
 
 
 @media screen and (min-width : 1660px ) { 
@@ -465,33 +515,33 @@ footer {
    /* image / logo */
 
    .missions img {
-      width: 8vw;
-      height: 10vh;
+      width: 100%;
+      height: auto;
    }
 
    .img__help {
-      width: 8vw;
-      height: 10vh;
+      width: 25%;
+      height: auto;
    }
 
    .advertising img {
-      width: 8vw;
-      height: 10vh;
+      width: 5%;
+      height: auto;
    }
 
    .partner img {
-      width: 8vw;
-      height: 10vh;
+      width: 10%;
+      height: auto;
    }
 
    .partner > .img__gouv {
-      width: 15vw;
-      height: 10vh;
+      width: 5%;
+      height: auto;
    }
 
    .imgSocialNetwork img {
-      width: 3vw;
-      height: 5vh;
+      width: 25%;
+      height: auto;
    }
 
 /* <----------------------------------------------------------------------> */
@@ -501,16 +551,7 @@ footer {
 
 .navBar__logo {
    position: relative;
-   left: -2vw;
-}
-
-
-   /* style des liens */
-
-.navBar__links {
-   justify-content: space-around;
-   min-width: 20vw;
-   
+   left: -2%;
 }
 
 /* <----------------------------------------------------------------------> */
@@ -521,7 +562,7 @@ footer {
 
 .advertising {
   
-   min-height: 20vh;
+   min-height: 20%;
 
 
 }
@@ -532,7 +573,7 @@ footer {
 
 .nosPartner {
  
-   min-height: 30vh;
+   min-height: 30%;
 
 
 }
@@ -544,16 +585,9 @@ footer {
 
 .présentation {
    flex-direction: row;
-   /* max-width: 50vw; */
-
+  
 }
 
-.présentation__text{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   max-width: 60vw;
-}
 
 .intro__paragraph__first{
       padding-bottom: 5%;
@@ -569,7 +603,7 @@ footer {
 
 .advertising {
   
-   min-height: 20vh;
+   min-height: 20%;
 
 
 }
@@ -577,7 +611,7 @@ footer {
 
 .nosPartner {
  
-   min-height: 40vh;
+   min-height: 40%;
 
 
 }
@@ -588,39 +622,40 @@ footer {
 
    footer {
      
-      min-height: 20vh;
+      min-height: 20%;
      
    }
 
    .logo__footer {
       position: relative;
-      left: -3vw;
+      left: -3%;
    }
    
    
    .navBar__link__footer a {
-      font-size: 1vw;
+      font-size: 1%;
    
    }
    
    .socialNetwork {
       position: relative;
-      left: -5vw;
+      left: -5%;
    }
    
    .imgSocialNetwork{
 
-      width: 50vw;
+      width: 100%;
+      height: auto;
    }
    
    .socialNetwork h5 {
-       font-size:1vw;
+       font-size:1%;
        
    }
 
 
 }
-
+ */
 
 /* small__screen__actualitys */
 
@@ -637,50 +672,16 @@ footer {
    justify-content: space-between;
    align-content: center;
    align-items: center;
-   min-height: 100vh;
+   min-height: auto;
 }
 
 .date {
    position: relative;
-   right: -30vw;
-   padding-top: 0.5vh;
-   padding-bottom: 10vh;
+   right: -30%;
+   padding-top: 0.5%;
+   padding-bottom: 10%;
 }
 
 .actuality__img {
    max-width: 310px;
 }
-
-
-@media screen and (min-width : 768px) {
-   .actuality__article {
-   
-      min-height: 60vh;
-      max-width: 666px;
-   }
-
-   }
-
-@media screen and (min-width : 1334px) {
-   .actuality__article {
-   
-      min-height: 90vh;
-      
-   }
-
-   .actualitys {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 10vh;
-   }
-   
-
-   .date {
-      position: relative;
-      right: -20vw;
-      padding-top: 0.5vh;
-   }
-
-   }
