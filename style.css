@@ -308,7 +308,7 @@ footer {
 
 .container__footer {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
 
 }
 
@@ -483,10 +483,10 @@ footer {
 .actuality__article {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-content: center;
    align-items: center;
-   min-height: 100vh;
+   height: 1000px;
 }
 
 .date {
