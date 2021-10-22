@@ -213,6 +213,7 @@ main {
    display: flex;
    justify-content:  space-evenly;
    align-content: center;
+   align-items: baseline;
 }
    
 .help {
@@ -231,6 +232,7 @@ main {
 
 .helps > li{
    max-width: 280px;
+   padding: 2%;
 }
 
 .img__help {
@@ -415,7 +417,7 @@ footer {
    }
 
    .img__gouv {
-      width: 25%;
+      width: 15%;
       height: auto;
    }
 
@@ -487,7 +489,7 @@ footer {
       
    }
 
-   .actualitys {
+   .actuality__article{
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -512,154 +514,9 @@ footer {
 
 @media screen and (min-width : 1660px ) { 
 
-   /* image / logo */
-
-   .missions img {
-      width: 100%;
-      height: auto;
-   }
-
-   .img__help {
-      width: 25%;
-      height: auto;
-   }
-
-   .advertising img {
-      width: 5%;
-      height: auto;
-   }
-
-   .partner img {
-      width: 10%;
-      height: auto;
-   }
-
-   .partner > .img__gouv {
-      width: 5%;
-      height: auto;
-   }
-
-   .imgSocialNetwork img {
-      width: 25%;
-      height: auto;
-   }
-
-/* <----------------------------------------------------------------------> */
-
-/* header */
-
-
-.navBar__logo {
-   position: relative;
-   left: -2%;
-}
-
-/* <----------------------------------------------------------------------> */
-
-
-/* pub */
-
-
-.advertising {
-  
-   min-height: 20%;
-
-
-}
-
-/* <----------------------------------------------------------------------> */
-
-/* partner */
-
-.nosPartner {
- 
-   min-height: 30%;
-
-
-}
-/* <----------------------------------------------------------------------> */
-
-
-
-/* présentation */
-
-.présentation {
-   flex-direction: row;
-  
-}
-
-
-.intro__paragraph__first{
-      padding-bottom: 5%;
-   
-   
-}
-
-/* aside */
-
-
-/* pub */
-
-
-.advertising {
-  
-   min-height: 20%;
-
-
-}
-/* partner */
-
-.nosPartner {
- 
-   min-height: 40%;
-
-
-}
-
-/* footer */
-
-
-
-   footer {
-     
-      min-height: 20%;
-     
-   }
-
-   .logo__footer {
-      position: relative;
-      left: -3%;
-   }
-   
-   
-   .navBar__link__footer a {
-      font-size: 1%;
-   
-   }
-   
-   .socialNetwork {
-      position: relative;
-      left: -5%;
-   }
-   
-   .imgSocialNetwork{
-
-      width: 100%;
-      height: auto;
-   }
-   
-   .socialNetwork h5 {
-       font-size:1%;
-       
-   }
-
-
-}
- */
-
 /* small__screen__actualitys */
 
-.actualitys {
+.actuality__article {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
