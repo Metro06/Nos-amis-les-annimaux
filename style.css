@@ -165,22 +165,12 @@ a:hover {
    justify-content: space-between;
 
    padding: 10px;
-   content: url('https://api.iconify.design/radix-icons/hamburger-menu.svg?width=70&height=70'); ;
-}
-
-
-.bar::after {
-   top: 10px;
-}
-
-.bar::before{
-   
-   top: -10px;
+   content: url('https://api.iconify.design/radix-icons/hamburger-menu.svg?width=60&height=60'); ;
 }
 
 /* ----------- close btn ------------- */
  .close_btn{
-   content: url('https://api.iconify.design/bytesize/close.svg?width=70&height=70');
+   content: url('https://api.iconify.design/bytesize/close.svg?width=60&height=60');
  }
 /* ------------- Hide menu ----------- */
 .navBar__links
