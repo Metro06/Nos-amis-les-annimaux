@@ -8,6 +8,7 @@
   <title>Accueil nos amis les animaux</title>
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </head>
 
 <!-- grid container -->
@@ -15,14 +16,18 @@
   <!-- navigation -->
   <header role="navigation" class="navBar">
     <!-- logo -->
-    <a href="Accueil.html"><div class="navBar__logo">
+    <a href="index.html"><div class="navBar__logo">
       <img src="photo/Logo/logos-NOS AMIS LES ANIMAUX-mobile.svg"></div>
     </a>
-    <nav>
+    <nav role="navigation">
       
+      <div class="burger">
+      
+      </div>
+
       <ul class="navBar__links">
         <li class="navBar__link">
-           <a href="Accueil.html">Accueil</a>
+           <a href="index.html">Accueil</a>
         </li>
         <li class="navBar__link">
            <a href="Actualitées.html">Actualitées</a>
@@ -32,10 +37,11 @@
         </li>
       </ul>
     </nav>
+
+
   </header>
   
   <main>
-        <h1>Accueil</h1>
     <section>
       <article class="présentation">
 
@@ -88,6 +94,7 @@
       </article>
 
       <article class="helpCompagnion">
+        <h2>Comment aider nos compagnions?</h2>
 
         <ul class="helps">
 
@@ -147,7 +154,7 @@
    <div class="container__footer">
 
      <div class="logo__footer">
-       <a href="Accueil.html">
+       <a href="index.html">
          <img src="photo/Logo/logos-NOS AMIS LES ANIMAUX-mobile.svg">
         </a>
       </div>
@@ -161,7 +168,7 @@
         </div>
       </div>
       
-      <nav class="navBar__footer">
+      <nav class="navBar__footer" role="navigation">
       
         <ul class="navBar__links__footer">
           <li class="navBar__link__footer">
@@ -180,7 +187,12 @@
       
       
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

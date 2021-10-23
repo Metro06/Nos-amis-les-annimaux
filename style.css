@@ -1,5 +1,4 @@
 /* reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +6,9 @@
     outline: none;
     
 
+ }
+ ul{
+    list-style: none;
  }
 
 /* <----------------------------------------------------------------------> */
@@ -41,8 +43,8 @@ body {
 
    display: grid;
    align-items: flex-start;
-   grid-auto-columns: 1fr 1fr 1fr;
-   grid-auto-rows: min-content max-content auto;
+   grid-auto-columns: auto max-content(900px) auto;
+   grid-auto-rows: min-content;
    grid-template-areas: 
    "header header header"
    "main main main"
@@ -59,7 +61,7 @@ body {
 }
 
 a {
-   list-style-type: none;
+  
    font-weight:bolder ;
    color: var(--navigation);
    text-decoration: none;
@@ -98,7 +100,7 @@ header {
    background-color: var(--secondary) ;
    /* placement sur la grille */
    grid-area: header;
-   min-height: 150px;
+   max-height: 125px;
 
 }
 
@@ -107,20 +109,26 @@ header {
 
 /* logo */
 
-   .navBar__logo > img {
-
-      height: 80px;
-
-   }
+.navBar__logo > img {
+   width: 180%;
+   min-height: auto;
    
+}
 
-   /* container flex navigation */
+
+/* container flex navigation */
+
+/* menu_fixed */
+
 .navBar {
-            
+   position: fixed;        
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 10px;
+   width: 100vw;
+   z-index: 999;
+
    
       
    
@@ -133,11 +141,11 @@ header {
 .navBar__links {
       display: flex;
       flex-direction: column;
-      justify-content:  space-evenly;
+      justify-content:  space-between;
       align-items: center;
-      list-style-type: none;
-      height: 7rem;
-      padding: 10px;
+      height: 100px;
+      width: 100px;
+      background-color: var(--background);
       
    
 }
@@ -147,13 +155,50 @@ header {
 a:hover {
    color:var(--primary);
       text-decoration:underline;
+    
       
 }
+
+/* toogle menu */
+
+.navBar__links{
+   display: none;
+}
+
+.burger {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   padding: 10px;
+   content: url('https://api.iconify.design/radix-icons/hamburger-menu.svg?width=60&height=60'); ;
+}
+
+/* ----------- close btn ------------- */
+ .close_btn{
+   content: url('https://api.iconify.design/bytesize/close.svg?width=60&height=60');
+ }
+/* ------------- Hide menu ----------- */
+.navBar__links
+{
+  display: none;
+}
+
+/* ------------------- Menu styling --------------- */
+.open_menu
+{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /* <----------------------------------------------------------------------> */
 
 /* main-style*/
 
-main {
+ main {
 
    /* placement du main sur grid */
    grid-area: main;
@@ -163,6 +208,7 @@ main {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   margin-top: 125px;
 }
 
 /* <----------------------------------------------------------------------> */
@@ -191,17 +237,11 @@ main {
 
    padding-bottom: 10%;
    display: flex;
-   justify-content: space-around;
+   justify-content:space-evenly;
    align-content: center;
    align-items: center;
 
    
-}
-
-.mission__link {
-
-   list-style: none;
-
 }
 
 
@@ -210,8 +250,9 @@ main {
 
 .helps {
    display: flex;
-   justify-content: space-around;
+   justify-content:  space-evenly;
    align-content: center;
+   align-items: baseline;
 }
    
 .help {
@@ -228,8 +269,13 @@ main {
    align-items: center;
 }
 
+.helps > li{
+   max-width: 280px;
+   padding: 2%;
+}
+
 .img__help {
-   height: 70px;
+   height: auto;
    
 
 }
@@ -253,21 +299,11 @@ aside {
 /* <----------------------------------------------------------------------> */
 
 
-/* pub */
-
-.advertising {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   min-height: 150px;
-
-
-}
-
 .pub {
    display: flex;
-   justify-content: space-around;
+   justify-content:  space-evenly;
    align-content: center;
+   padding: 5%;
 }
 /* <----------------------------------------------------------------------> */
 
@@ -276,7 +312,7 @@ aside {
 .nosPartner {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content:  center;
    min-height: 250px;
 
 
@@ -288,11 +324,14 @@ aside {
 
 .partner {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-content: center;
    align-items: flex-end;
+   padding: 5%;
    
 }
+
+
 
 /* footer */
 
@@ -308,7 +347,7 @@ footer {
 
 .container__footer {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
 
 }
 
@@ -326,7 +365,6 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   list-style-type: none;
 
 }
 
@@ -374,18 +412,19 @@ footer {
    h3, p, h1, h2, h4{
 
       text-align: center;
-      font-size: 3vh;
+      font-size: 1rem;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 2vh;
+      font-size: 1rem;
    }
 
    a, h5 {
-      font-size: 2vh;
+      font-size: 0.8rem;
+      padding-bottom: 5%;
    }
 
 /* <----------------------------------------------------------------------> */
@@ -393,24 +432,42 @@ footer {
 
    /* image / logo */
 
-  
+   .navBar {
+            
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+   
+   }
+
+   .navBar__links{
+     
+      background-color: transparent;
+   }
+
+   .burger{
+      content: none;
+   }
+
    .imgSocialNetwork img {
-      width: 7vw;
-      height: 5vh;
+      width: 10%;
+      height: auto;
    }
 
    .navBar__logo img {
-      width: 20vw;
-      height: 10vh;
+      width: 150%;
+      height: auto;
+      padding-top: 20px ;
    }
 
    .img__gouv {
-      width: 35vw;
+      width: 15%;
+      height: auto;
    }
 
    .logo__footer img {
-      width: 20vw;
-      height: 10vh;
+      width: 100%;
+      height: auto;
    }
 
    /* header */
@@ -419,199 +476,40 @@ footer {
       flex-direction: row;
       justify-content:  space-around;
       align-items: center;
-      list-style-type: none;
       min-width: 500px;
       
    
 }
 
-/* <----------------------------------------------------------------------> */
 
-/* pub */
-
-
-.advertising {
-  
-   min-height: 20vh;
-
-
-}
 
 /* <----------------------------------------------------------------------> */
-
-/* partner */
-
-.nosPartner {
- 
-   min-height: 30vh;
-
-
-}
-
-
-}
-/* <----------------------------------------------------------------------> */
-
-                              /* screen 1024px */
-
-
-@media screen and (min-width : 1660px ) { 
-
-   /* image / logo */
-
-   .missions img {
-      width: 8vw;
-      height: 10vh;
-   }
-
-   .img__help {
-      width: 8vw;
-      height: 10vh;
-   }
-
-   .advertising img {
-      width: 8vw;
-      height: 10vh;
-   }
-
-   .partner img {
-      width: 8vw;
-      height: 10vh;
-   }
-
-   .partner > .img__gouv {
-      width: 15vw;
-      height: 10vh;
-   }
-
-   .imgSocialNetwork img {
-      width: 3vw;
-      height: 5vh;
-   }
-
-/* <----------------------------------------------------------------------> */
-
-/* header */
-
-
-.navBar__logo {
-   position: relative;
-   left: -2vw;
-}
-
-
-   /* style des liens */
-
-.navBar__links {
-   justify-content: space-around;
-   min-width: 20vw;
-   
-}
-
-/* <----------------------------------------------------------------------> */
-
-
-/* pub */
-
-
-.advertising {
-  
-   min-height: 20vh;
-
-
-}
-
-/* <----------------------------------------------------------------------> */
-
-/* partner */
-
-.nosPartner {
- 
-   min-height: 30vh;
-
-
-}
-/* <----------------------------------------------------------------------> */
-
-
-
-/* présentation */
-
-.présentation {
-   flex-direction: row;
-   /* max-width: 50vw; */
-
-}
-
 .présentation__text{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   max-width: 60vw;
+   max-width: 60%;
 }
-
-.intro__paragraph__first{
-      padding-bottom: 5%;
-   
-   
-}
-
-/* aside */
-
-
 /* pub */
 
 
 .advertising {
   
-   min-height: 20vh;
+   min-height: 200px;
 
 
 }
+
+/* <----------------------------------------------------------------------> */
+
 /* partner */
 
 .nosPartner {
  
-   min-height: 40vh;
+   min-height: 300px;
 
 
 }
-
-/* footer */
-
-
-
-   footer {
-     
-      min-height: 20vh;
-     
-   }
-
-   .logo__footer {
-      position: relative;
-      left: -3vw;
-   }
-   
-   
-   .navBar__link__footer a {
-      font-size: 1vw;
-   
-   }
-   
-   .socialNetwork {
-      position: relative;
-      left: -5vw;
-   }
-   
-   .imgSocialNetwork{
-
-      width: 50vw;
-   }
-   
-   .socialNetwork h5 {
-       font-size:1vw;
-       
-   }
 
 
 }
@@ -628,11 +526,11 @@ footer {
 
 .actuality__article {
    display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-content: center;
+   align-content: space-between;
    align-items: center;
-   min-height: 100vh;
+   height: 503px;
+   flex-direction: column;
+   justify-content: space-evenly;
 }
 
 .date {
@@ -668,7 +566,7 @@ footer {
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 10vh;
+   
    }
    
 
@@ -676,6 +574,7 @@ footer {
       position: relative;
       right: -20vw;
       padding-top: 0.5vh;
+      padding-bottom: 30vh;
    }
 
    }
