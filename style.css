@@ -24,7 +24,9 @@
    --background : #625440;
    --main :#41392E;
    --button : #EB651C;
+   --button_hover :#eb641caf; 
    --navigation : #000000 ;
+
 
 
  }
@@ -43,7 +45,7 @@ body {
 
    display: grid;
    align-items: flex-start;
-   grid-auto-columns: auto max-content(900px) auto;
+   grid-auto-columns: auto max-content(900px);
    grid-auto-rows: min-content;
    grid-template-areas: 
    "header header header"
@@ -67,7 +69,9 @@ a {
    text-decoration: none;
 }
 
-
+h1{
+   font-size: 2rem;
+}
 
 h2 {
    
@@ -414,7 +418,12 @@ footer {
 
    /* basique style */
 
-   h3, p, h1, h2, h4{
+   h1 {
+      font-size: 2rem;
+   }
+
+
+   h3, p, h2, h4{
 
       text-align: center;
       font-size: 1rem;
@@ -583,3 +592,37 @@ footer {
    }
 
    }
+/* <----------------------------------------------------------------------> */
+
+   /* contact */
+
+   .form > p > a {
+      color: var(--background);
+      font-size: 1rem;
+   }
+
+   .form_flex{
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10%;
+   }
+
+   .form_flex_élèment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: space-between;
+      align-items: center;
+      min-height: 400px;
+      
+  }
+
+  .button {
+     background-color: var(--button);
+     
+  }
+
+  .button:hover{
+   background-color: var(--button_hover);
+  }
