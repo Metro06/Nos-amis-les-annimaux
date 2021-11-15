@@ -419,25 +419,25 @@ footer {
    /* basique style */
 
    h1 {
-      font-size: 2rem;
+      font-size: 3rem;
    }
 
 
    h3, p, h2, h4{
 
       text-align: center;
-      font-size: 1rem;
+      font-size: 2rem;
    
    }
    
    p {
       color: var(--main);
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 2rem;
    }
 
    a, h5 {
-      font-size: 0.8rem;
+      font-size: 1.5rem;
       padding-bottom: 5%;
    }
 
@@ -460,6 +460,7 @@ footer {
    }
 
    .burger{
+      display: none;
       content: none;
    }
 
@@ -469,7 +470,7 @@ footer {
    }
 
    .navBar__logo img {
-      width: 150%;
+      width: 200%;
       height: auto;
       
    }
