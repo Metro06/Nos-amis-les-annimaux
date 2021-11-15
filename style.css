@@ -378,7 +378,7 @@ footer {
 }
 
 .navBar__link__footer a {
-   font-size: 0.8rem;
+   font-size: 1.2rem;
 
 }
 
@@ -481,7 +481,7 @@ footer {
    }
 
    .logo__footer img {
-      width: 100%;
+      width: 145%;
       height: auto;
    }
 
